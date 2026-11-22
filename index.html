@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieNest | Discover Movies & Series</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Movie<span>Nest</span>
+        </a>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="watchlist.html">My Watchlist</a>
+        </nav>
+
+        <a href="account.html" class="account-btn">
+            Sign In
+        </a>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    WELCOME TO MOVIENEST
+                </span>
+
+                <h1>
+                    Discover a world
+                    <span>of entertainment.</span>
+                </h1>
+
+                <p>
+                    Your destination for discovering amazing movies,
+                    exciting television series and unforgettable stories.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="movies.html" class="primary-btn">
+                        Explore Movies
+                    </a>
+
+                    <a href="series.html" class="secondary-btn">
+                        Explore Series
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH SECTION -->
+        <section class="search-section">
+
+            <div class="search-content">
+
+                <h2>Find Your Next Favourite</h2>
+
+                <p>
+                    Search for movies and television series.
+                </p>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search movies and series..."
+                    aria-label="Search movies and series"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- TRENDING MOVIES -->
+        <section class="section" id="movies">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">EXPLORE</span>
+                    <h2>Trending Movies</h2>
+                </div>
+
+                <a href="movies.html" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+            <div class="movie-grid" id="movieGrid"></div>
+
+        </section>
+
+
+        <!-- POPULAR SERIES -->
+        <section class="section" id="series">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">DISCOVER</span>
+                    <h2>Popular Series</h2>
+                </div>
+
+                <a href="series.html" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+            <div class="movie-grid" id="seriesGrid"></div>
+
+        </section>
+
+
+        <!-- WATCHLIST PREVIEW -->
+        <section class="section" id="watchlist">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">YOUR COLLECTION</span>
+                    <h2>My Watchlist</h2>
+                </div>
+
+                <a href="watchlist.html" class="view-all">
+                    View Watchlist →
+                </a>
+
+            </div>
+
+            <div class="movie-grid" id="watchlistGrid"></div>
+
+            <p id="emptyMessage" class="empty-message">
+                Your watchlist is empty.
+                Add movies or series to see them here.
+            </p>
+
+        </section>
+
+
+        <!-- DETAILS POPUP -->
+        <div class="modal" id="detailsModal">
+
+            <div class="modal-content">
+
+                <button
+                    class="close-btn"
+                    id="closeModal"
+                    aria-label="Close details"
+                >
+                    &times;
+                </button>
+
+                <img
+                    id="detailImage"
+                    src="images.jpg"
+                    alt="Selected title poster"
+                >
+
+                <div class="modal-text">
+
+                    <span class="section-label">
+                        MOVIENEST DETAILS
+                    </span>
+
+                    <h2 id="detailTitle"></h2>
+
+                    <p id="detailDescription"></p>
+
+                    <p id="detailGenre"></p>
+
+                    <a
+                        id="trailerLink"
+                        class="primary-btn"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Find Official Trailer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="index.html" class="logo">
+                    Movie<span>Nest</span>
+                </a>
+
+                <p>
+                    Discover stories worth watching.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="series.html">Series</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="account.html">Account</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 MovieNest. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

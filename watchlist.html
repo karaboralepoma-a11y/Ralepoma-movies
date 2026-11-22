@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watchlist | MovieNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            Movie<span>Nest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="watchlist.html" class="active">My Watchlist</a>
+        </nav>
+
+        <a href="account.html" class="account-btn">Sign In</a>
+    </header>
+
+
+    <main>
+
+        <!-- WATCHLIST BANNER -->
+        <section class="page-banner watchlist-hero">
+
+            <div class="banner-content">
+
+                <span class="eyebrow">YOUR PERSONAL COLLECTION</span>
+
+                <h1>My Watchlist</h1>
+
+                <p>
+                    Your favourite movies and series,
+                    all together in one place.
+                    Save your favourites and discover
+                    what to watch next.
+                </p>
+
+                <a href="movies.html" class="primary-btn">
+                    Discover Movies
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SAVED TITLES -->
+        <section class="section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">YOUR COLLECTION</span>
+                    <h2>Saved Titles</h2>
+                </div>
+            </div>
+
+            <div class="movie-grid" id="watchlistGrid"></div>
+
+            <p class="empty-message" id="emptyMessage">
+                Your watchlist is empty.
+                Visit Movies or Series to add titles.
+            </p>
+
+        </section>
+
+
+        <!-- DETAILS MODAL -->
+        <div class="modal" id="detailsModal">
+
+            <div class="modal-content">
+
+                <button class="close-btn" id="closeModal">
+                    &times;
+                </button>
+
+                <img id="detailImage" src="" alt="">
+
+                <div class="modal-text">
+
+                    <h2 id="detailTitle"></h2>
+
+                    <p id="detailDescription"></p>
+
+                    <p id="detailGenre"></p>
+
+                    <a
+                        id="trailerLink"
+                        class="primary-btn"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Find Trailer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <a href="index.html" class="logo">
+                    Movie<span>Nest</span>
+                </a>
+
+                <p>Discover stories worth watching.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="series.html">Series</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="account.html">Account</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 MovieNest. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

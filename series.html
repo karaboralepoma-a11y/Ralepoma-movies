@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series | MovieNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Movie<span>Nest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html" class="active">Series</a>
+            <a href="watchlist.html">My Watchlist</a>
+        </nav>
+
+        <a href="account.html" class="account-btn">Sign In</a>
+
+    </header>
+
+
+    <main>
+
+        <!-- SERIES HERO BANNER -->
+        <section class="page-banner series-hero">
+
+            <div class="banner-content">
+
+                <span class="eyebrow">MOVIENEST ORIGINAL DISCOVERY</span>
+
+                <h1>Explore Amazing Series</h1>
+
+                <p>
+                    Discover exciting stories, unforgettable characters
+                    and your next favourite series.
+                </p>
+
+                <a href="#popular-series" class="primary-btn">
+                    Explore Series
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH SECTION -->
+        <section class="search-section">
+
+            <div class="search-content">
+
+                <h2>Find Your Next Series</h2>
+
+                <p>Search for series by title or genre.</p>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search series..."
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- SERIES GRID -->
+        <section class="section" id="popular-series">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">DISCOVER MORE</span>
+                    <h2>Popular Series</h2>
+                </div>
+
+            </div>
+
+            <div class="movie-grid" id="seriesGrid"></div>
+
+            <p class="empty-results" id="noResults" hidden>
+                No series found. Try another search.
+            </p>
+
+        </section>
+
+
+        <!-- SERIES DETAILS MODAL -->
+        <div class="modal" id="detailsModal">
+
+            <div class="modal-content">
+
+                <button class="close-btn" id="closeModal">
+                    &times;
+                </button>
+
+                <img id="detailImage" src="" alt="Series poster">
+
+                <div class="modal-text">
+
+                    <h2 id="detailTitle"></h2>
+
+                    <p id="detailDescription"></p>
+
+                    <p id="detailGenre"></p>
+
+                    <a
+                        id="trailerLink"
+                        class="primary-btn"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Find Trailer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    Movie<span>Nest</span>
+                </a>
+
+                <p>Discover stories worth watching.</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="series.html">Series</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="account.html">Account</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MovieNest. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | MovieNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Movie<span>Nest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="watchlist.html">My Watchlist</a>
+            <a href="account.html" class="active">Account</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ACCOUNT HERO -->
+    <section class="page-banner account-hero">
+
+        <h1>Your MovieNest Account</h1>
+
+        <p>
+            Join MovieNest and keep track of the stories you love.
+        </p>
+
+    </section>
+
+
+    <!-- ACCOUNT FORM -->
+    <main class="account-section">
+
+        <div class="account-box">
+
+            <h1>Welcome to MovieNest</h1>
+
+            <p>Create an account or sign in to continue.</p>
+
+
+            <!-- ACCOUNT TABS -->
+            <div class="account-tabs">
+
+                <button type="button" id="loginTab" class="active-tab">
+                    Sign In
+                </button>
+
+                <button type="button" id="signupTab">
+                    Sign Up
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+
+                <label for="loginEmail">Email address</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="loginPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                    minlength="8"
+                >
+
+                <button type="submit" class="form-submit">
+                    Sign In
+                </button>
+
+            </form>
+
+
+            <!-- SIGNUP FORM -->
+            <form id="signupForm" hidden>
+
+                <label for="signupName">Full name</label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="signupEmail">Email address</label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="signupPassword">Password</label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="At least 8 characters"
+                    required
+                    minlength="8"
+                >
+
+                <label for="confirmPassword">Confirm password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                    minlength="8"
+                >
+
+                <button type="submit" class="form-submit">
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <p id="accountMessage" role="status" aria-live="polite"></p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    Movie<span>Nest</span>
+                </a>
+
+                <p>
+                    Discover stories worth watching.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="series.html">Series</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="account.html">Account</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MovieNest. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

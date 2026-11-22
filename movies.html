@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movies | MovieNest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Movie<span>Nest</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html" class="active">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="watchlist.html">My Watchlist</a>
+        </nav>
+
+        <a href="account.html" class="account-btn">
+            Sign In
+        </a>
+
+    </header>
+
+
+    <!-- MOVIES HERO BANNER -->
+    <section class="page-banner movies-hero">
+
+        <h1>Explore Movies</h1>
+
+        <p>
+            Find your next favourite movie.
+            Discover exciting stories and unforgettable adventures.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+
+        <div class="search-content">
+
+            <h2>Find Your Movie</h2>
+
+            <p>Search movies by title or genre.</p>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search movies by title or genre..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- MOVIES SECTION -->
+    <main>
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <h2>All Movies</h2>
+
+            </div>
+
+            <div class="movie-grid" id="movieGrid"></div>
+
+            <p class="empty-results" id="noResults" hidden>
+                No movies found.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- MOVIE DETAILS MODAL -->
+    <div class="modal" id="detailsModal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" id="closeModal">
+                &times;
+            </button>
+
+            <img id="detailImage" src="" alt="">
+
+            <div class="modal-text">
+
+                <h2 id="detailTitle"></h2>
+
+                <p id="detailDescription"></p>
+
+                <p id="detailGenre"></p>
+
+                <a
+                    id="trailerLink"
+                    class="primary-btn"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Find Trailer
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    Movie<span>Nest</span>
+                </a>
+
+                <p>
+                    Discover stories worth watching.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movies</a>
+                <a href="series.html">Series</a>
+                <a href="watchlist.html">My Watchlist</a>
+                <a href="account.html">Account</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 MovieNest. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
